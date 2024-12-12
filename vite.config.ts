@@ -11,6 +11,7 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
   ],
+  base: '/ui', //路由前缀
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
